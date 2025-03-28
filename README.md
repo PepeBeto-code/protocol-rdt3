@@ -45,8 +45,6 @@ El simulador permite la alteración y pérdida de paquetes con distintas probabi
 
 - **Lenguaje:** Java
 - **Protocolos de Red:** Sockets UDP
-- **Formato de mensajes:** JSON
-- **Serializacion:** GSON
 
 ## Pruebas Realizadas
 
@@ -73,8 +71,8 @@ El simulador permite la alteración y pérdida de paquetes con distintas probabi
 - Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/tic-tac-toe-sockets.git
-cd tic-tac-toe-sockets
+git clone https://github.com/PepeBeto-code/protocol-rdt3.git
+cd protocol-rdt3
 ```
 
 ### Compilación
