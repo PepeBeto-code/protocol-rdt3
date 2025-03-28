@@ -1,4 +1,5 @@
 package Udp;
+
 public class Packet {
     private String data;
     private int seqNum;
@@ -29,6 +30,7 @@ public class Packet {
     public int getChecksum() {
         return checksum;
     }
+
     public String getData() {
         return data;
     }
@@ -45,4 +47,3 @@ public class Packet {
         return packet;
     }
 }
-

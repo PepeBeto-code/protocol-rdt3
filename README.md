@@ -70,7 +70,6 @@ El simulador permite la alteración y pérdida de paquetes con distintas probabi
 ### Requisitos previos
 
 - Tener instalado Java (versión 8 o superior).
-- Librería Gson
 - Clonar el repositorio:
 
 ```bash
@@ -78,21 +77,35 @@ git clone https://github.com/tu-usuario/tic-tac-toe-sockets.git
 cd tic-tac-toe-sockets
 ```
 
-### Ejecución del servidor
+### Compilación
+
+Antes de ejecutar el simulador, es necesario compilar los archivos **.java.** Para ello, desde la carpeta **src/**, ejecuta los siguientes comandos:
 
 ```bash
-java -jar servidor.jar
+javac -d ./build Simulador/*.java
+javac -d ./build Udp/*.java
 ```
 
-### Ejecución de los clientes
+Este comando:
+
+- Compila todos los archivos .java dentro de Simulador/ y Udp/ respectivamente.
+
+- Genera los archivos .class en la carpeta build/, manteniendo la estructura de los paquetes.
+
+### Ejecución
+
+Una vez compilado, para ejecutar el simulador, desde la carpeta **build/**, usa:
 
 ```bash
-java -jar cliente1.jar
-java -jar cliente2.jar
+java Simulador.Main
+```
+
+De igual forma puedes ejecutar la implementacion del protocolo
+
+```bash
+java Udp.Main
 ```
 
 ## Diagrama de Flujo del Protocolo rdt3.0
 
 ![diagrama de flujo de arquitectura](/images/DF-rdt3.drawio.png)
-
-## Capturas de Pantalla
